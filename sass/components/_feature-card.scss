@@ -1,0 +1,37 @@
+.feature-card {
+  width: 30rem;
+  height: 47rem;
+  border: .5px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+  border-radius: 3.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  transition: all .2s;
+
+  &:hover {
+    transform: translateY(-.5rem) scale(1.02);
+  }
+
+  &__img-box {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__heading {
+    color: $sec;
+    font-size: 2.5rem;
+  }
+
+  &__content {
+    font-size: 2rem;
+    width: 90%;
+  }
+}

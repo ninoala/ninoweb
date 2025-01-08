@@ -1,0 +1,56 @@
+.service-card {
+  position: relative;
+  transition: all .2s;
+  width: 40rem;
+  height: 40rem;
+  cursor: pointer;
+
+  @media only screen and (max-width: 81.25em) {
+    width: 35rem;
+    height: 35rem;
+  }
+
+  @include respond(phone) {
+    width: 40rem;
+    height: 40rem;
+  }
+
+  @media only screen and (max-width: 28.125em) {
+    width: 35rem;
+    height: 35rem;
+  }
+
+  @media only screen and (max-width: 21.875em) {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  img {
+    border-radius: 39px;
+  }
+
+  &__heading {
+    width: 100%;
+    padding: 2rem 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: $white;
+    font-size: 2.4rem;
+    background-color: rgba($main, 1);
+    border-bottom-left-radius: 39px;
+    border-bottom-right-radius: 39px;
+
+    @media only screen and (max-width: 81.25em) {
+      font-size: 1.75rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 2rem;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-.5rem) scale(1.02);
+  }
+}  

@@ -1,0 +1,46 @@
+.popup-overlay {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+}
+
+.popup-content {
+  position: relative;
+  margin: 10% auto;
+  padding: 20px;
+  background: rgba($main, .7);
+  width: 80%;
+  max-width: 600px;
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #fff;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.wpforms-field-label, .wpforms-field-sublabel, .after {
+  color: $sec !important;
+  font-family: inherit !important;
+}
+
+.wpforms-submit {
+  background-color: $sec !important;
+}
+
+div.wpforms-container-full .wpforms-form input.wpforms-field-medium, div.wpforms-container-full .wpforms-form select.wpforms-field-medium, div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium {
+    max-width: 100%;
+}

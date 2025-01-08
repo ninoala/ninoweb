@@ -1,0 +1,114 @@
+.project {
+  width: 80%;
+  margin: 0 auto 10rem auto;
+  padding: 10rem 6rem;
+  border-radius: 100px;
+  position: relative;
+  background-color: $main;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  @include respond(desktop) {
+    padding: 10rem 6rem;
+  }
+
+  @media only screen and (max-width: 75em) {
+    flex-direction: column-reverse;
+    padding: 5rem 2rem;
+    width: 60%;
+  }
+
+  @include respond(tab-port) {
+    width: 85%;
+    margin: 0 auto 5rem auto;
+    border-radius: 3.9rem;
+  }
+
+  @include respond(phone) {
+    width: 95%;
+    border-radius: 3.9rem;
+  }
+
+  &__text {
+    width: 50%;
+    border-radius: 3.9rem;
+    text-align: left;
+    flex: 1;
+
+    @media only screen and (max-width: 75em) {
+      text-align: center;
+      width: 90%;
+    }
+  }
+
+  &__heading {
+    color: $sec;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  &__paragraph {
+    color: $white; 
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+
+    @media only screen and (max-width: 78.125em) {
+      font-size: 2rem;
+    }
+  }
+
+  img {
+    border: solid 4px $sec;
+    border-radius: 3.9rem;
+    flex: 1;
+
+    @media only screen and (max-width: 87.5em) {
+      width: 50rem;
+    }
+
+    @media only screen and (max-width: 78.125em) {
+      width: 45rem;
+    }
+
+    @include respond(tab-port) {
+      width: 60rem;
+    }
+
+    @include respond(phone) {
+      width: 45rem;
+    }
+  }
+
+  &__btn {
+    &,
+    &:link,
+    &:visited {
+      display: inline-block;
+      width: 14rem;
+      text-decoration: none;
+      padding: 1rem 3rem;
+      background-color: $white;
+      color: $sec;
+      font-size: 2rem;
+      border-radius: 3.9rem;
+      transition: all .2s;
+      text-align: center;
+    }
+
+    &:hover {
+      background-color: $sec;
+      color: $white;
+      transform: translateY(-.1rem) scale(1.01);
+    }
+  }
+}  
+
+.project:nth-child(odd) {
+  flex-direction: row-reverse;
+
+  @media only screen and (max-width: 75em) {
+    flex-direction: column-reverse;
+  }
+}

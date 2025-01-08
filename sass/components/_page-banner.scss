@@ -1,0 +1,69 @@
+body {
+  position: relative;
+}
+
+.page-banner {
+  height: 85vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+
+  &__content {
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__img {
+    margin: 0 auto;
+    width: 70rem;
+    height: auto;
+    display: block;
+    animation: rotateInPlace 2s linear forwards;
+
+    @include respond(desktop) {
+      width: 65rem;
+    }
+
+    @include respond(tab-land) {
+      width: 60rem;
+    }
+
+    @include respond(tab-port) {
+      width: 55rem;
+    }
+
+    @include respond(tab-port) {
+      width: 45rem;
+    }
+  }
+
+  &__bg-image {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &--about {
+    height: 20vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+@keyframes rotateInPlace {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}

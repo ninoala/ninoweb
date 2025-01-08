@@ -1,0 +1,79 @@
+.pricing {
+  background-color: $main;
+  color: $white;
+  width: 75%;
+  margin: 4rem auto;
+  border-radius: 3.9rem;
+  padding: 5rem 2rem;
+  position: relative;
+
+  @media only screen and (max-width: 64em) {
+    width: 80%;
+  }
+
+  @include respond(phone) {
+    width: 95%;
+  }
+
+  &__img-box {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 10rem;
+
+    @include respond(phone) {
+      width: 7.5rem;
+    }
+    
+    @media only screen and (max-width: 31.25em) {
+      width: 4.5rem;
+      top: 1%;
+    }
+  }
+
+  &__heading {
+    color: $sec;
+    font-size: 3.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 0 1rem 1rem rgba($black, .2);
+  }
+
+  &__intro-paragraph {
+    text-align: center;
+    font-size: 2.4rem;
+    width: 80%;
+    margin: 0 auto 2rem auto;
+  }
+
+  &__details {
+    font-size: 2rem;
+    width: 90%;
+    margin: 0 auto;
+
+    p {
+      margin: 0 0 1rem 0;
+    }
+  }
+
+  &__sub-heading {
+    display: inline-block;
+
+    &--lvl1 {
+      color: #FF6F61;
+    }
+
+    &--lvl2 {
+      color: #FFD700;
+    }
+
+    &--lvl3 {
+      color: #4CAF50;
+    }
+
+    & + p {
+      display: inline-block;
+      margin: 0;
+    }
+  }
+}  

@@ -1,0 +1,143 @@
+.section-intro {
+  margin-top: 78vh;
+  text-align: center;
+  padding: 1rem 0;
+
+  &__paragraph {
+    margin-top: 2rem;
+    font-size: 3rem;
+
+    @include respond(phone) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      display: inline-block;
+      color: $sec;
+      text-decoration: none;
+      transition: all .2s;
+    }
+
+    &:hover {
+      color: $sec-dark;
+      transform: translateY(-.1rem) scale(1.01);
+    }
+  }
+
+  &__cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 12rem;
+    flex-wrap: wrap;
+
+    @include respond(desktop) {
+      gap: 5rem;
+    }
+  }
+
+  &__btn {
+    &,
+    &:link,
+    &:visited {
+      width: 18rem;
+      text-decoration: none;
+      display: block;
+      margin: 6rem auto 0 auto;
+      padding: 1rem 2rem;
+      background-color: $main;
+      color: $white;
+      font-size: 2rem;
+      box-shadow: 0 2rem 2rem rgba($black, .2);
+      transition: all .2s;
+    }
+
+    &:hover {
+      background-color: $main-dark;
+      transform: translateY(-.2rem) scale(1.01);
+    }
+  }
+}
+
+.section-description {
+  display: flex;
+  padding: 10rem 5rem;
+
+  &__text {
+    flex: 2;
+  }
+
+  &__img-box {
+    flex: 1;
+
+    @media only screen and (max-width: 75em) {
+      display: none;
+    }
+  }
+
+  &__paragraph {
+    font-size: 3rem;
+    width: 85%;
+    margin-top: 8rem;
+
+    @include respond(desktop) {
+      margin-top: 4rem;
+      font-size: 2.5rem;
+    }
+
+    @media only screen and (max-width: 87.5em) {
+      margin-top: 2rem;
+    }
+
+    @include respond(tab-land) {
+      width: 100%;
+      font-size: 2.2rem;
+    }
+
+    @include respond(phone) {
+      text-align: center;
+    }
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      display: inline-block;
+      color: $sec;
+      text-decoration: none;
+      transition: all .2s;
+    }
+
+    &:hover {
+      color: $sec-dark;
+      transform: translateY(-.1rem) scale(1.01);
+    }
+  }
+
+  &__img {
+    width: 40rem;
+    border-radius: 3.9rem;
+    margin-left: 10rem;
+  }
+}
+
+.section-icons {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-around;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+}
+
+.section-featured-projects {
+  text-align: center;
+}

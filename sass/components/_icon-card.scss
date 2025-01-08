@@ -1,0 +1,55 @@
+.icon {
+  text-align: center;
+  width: 20%;
+  transition: all .2s;
+
+  @include respond(tab-port) {
+    width: 80%;
+  }
+
+  &__image-box {
+    @include respond(tab-land) {
+      width: 10rem;
+      height: 10rem;
+      margin: 0 auto;
+    }
+
+    @include respond(tab-port) {
+      width: 18rem;
+      height: 18rem;
+      margin: 0 auto;
+    }
+
+    @include respond(phone) {
+      width: 14rem;
+      height: 14rem;
+      margin: 0 auto;
+    }
+
+    img {
+      @include respond(tab-port) {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto 2rem auto;
+      }
+    }
+  }
+
+  &__heading {
+    width: 100%;
+    font-size: 2.2rem;
+    color: $sec;
+
+    @include respond(tab-land) {
+      font-size: 1.8rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-.2rem) scale(1.02);
+  }
+}
