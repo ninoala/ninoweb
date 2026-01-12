@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         popup.style.display = 'block';
         document.body.classList.add('no-scroll');
       });
-    });
+    });, M`  ttttt`
 
     if (closePopup) {
       closePopup.addEventListener('click', function (e) {
